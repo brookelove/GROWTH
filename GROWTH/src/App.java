@@ -1,8 +1,9 @@
 import java.util.*;
 
 public class App {
+    static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
         System.out.println(
                 "Welcome to GROWTH! This is a place where you can categorize your plants as well as learn about your plants health!");
 
