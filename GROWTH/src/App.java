@@ -1,5 +1,5 @@
-import java.util.*;
 import java.util.Scanner;
+//import MainMenuOptions;
 
 public class App {
     static Scanner input = new Scanner(System.in);
@@ -20,6 +20,7 @@ public class App {
             switch (response) {
                 case "A":
                     System.out.println("Great lets add a new plant!");
+                    MainMenuOptions.newPlantInfo();
                     break;
                 case "B":
                     System.out.println("Onto the GreenHouse!");

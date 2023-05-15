@@ -1,15 +1,14 @@
 import java.util.*;
 import java.util.Scanner;
-
 import Plant.Foliage;
 import Plant.Succulent;
 
-public class Options {
-    Scanner input = new Scanner(System.in);
+public class MainMenuOptions {
+    static Scanner input = new Scanner(System.in);
     ArrayList<Foliage> foliageList = new ArrayList<Foliage>();
     ArrayList<Succulent> succulentList = new ArrayList<Succulent>();
 
-    public void newPlantInfo() {
+    public static void newPlantInfo() {
         String commonName;
         String Age;
         Boolean hasVarigation;

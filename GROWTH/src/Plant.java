@@ -2,10 +2,9 @@ public abstract class Plant {
     // holds all of the common attributes with plants [leaves, varigation, light,
     // water]
     // have to create an ID for each plant
-    private String commonName;
-    private String age;
+    public String commonName;
+    public String age;
     // we will be providing the best lightSource information
-    // private String lightSource;
     public Boolean hasVarigation;
     private Integer potSize;
     private Float price;
@@ -42,7 +41,8 @@ public abstract class Plant {
 
     public class Foliage extends Plant {
 
-        public Boolean hasLeaves;
+        public String leafShape;
+        public String leafColor;
 
         @Override
         public void waterPlants() {
