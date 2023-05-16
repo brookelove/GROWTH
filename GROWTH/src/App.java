@@ -1,5 +1,5 @@
+import java.util.*;
 import java.util.Scanner;
-//import MainMenuOptions;
 
 public class App {
     static Scanner input = new Scanner(System.in);
@@ -24,6 +24,7 @@ public class App {
                     break;
                 case "B":
                     System.out.println("Onto the GreenHouse!");
+                    MainMenuOptions.getGreenHouse();
                     break;
                 case "C":
                     System.out.println("Lets update that Plant!");
