@@ -47,7 +47,7 @@ class Succulent extends Plant {
     @Override
     public void grow(){
         //specific optional growing conditions for succulent
-        System.out.println("A succulent or cacti needs to be dried out completely before watering");
+        System.out.println("Best option is to leave it alone and let it grow in spurts");
     }
     @Override
     public void varrigationInfo(){
@@ -56,7 +56,7 @@ class Succulent extends Plant {
     }
     @Override
     public void waterPlant() {
-        System.out.printf("Water succulent plant with special instructions ");
+        System.out.printf("Water succulent plant with special instructions and watch for these signs. Please dry out completely before watering ");
     }
 }
 class Foliage extends Plant {
@@ -67,10 +67,13 @@ class Foliage extends Plant {
         this.leafShape = leafShape;
         this.leafColor = leafColor;
     }
-        @Override
-        public void grow() {
-            System.out.println("Foliage needs to be dried out before watering but most love humidity");
-        }
+    public void checkRoots() {
+        System.out.println("Please check my roots!");
+    }
+    @Override
+    public void grow() {
+        System.out.println("Foliage love humidity and love to bask in the sun!");
+    }
     @Override
     public void varrigationInfo(){
         //specific optional growing conditions for foliage
@@ -78,10 +81,10 @@ class Foliage extends Plant {
     }
     @Override
     public void waterPlant() {
-        System.out.printf("Water foliage plant with special instructions ");
+        System.out.printf("Water foliage plant with special instructions. They need to be dried out before watering and they tend to love humid envroinments");
     }
 }
-// Don't know the plants common name
+// Don't know the plants common name so need to ask questions about need to take in and make a connection
 //    abstract class Mystery extends Plant {
 //        /// if the plant is a mystery has to ask questions based on color look and ect.
 //        /// to make work
