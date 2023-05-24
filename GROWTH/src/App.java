@@ -9,17 +9,17 @@ public class App {
         Integer response;
         do {
             System.out.println(
-                    "Here are the options to check out your virtual greenhouse:\n1.Add a New Plant\n2.Check out Greenhouse\n3.Update a Plant\n4. Delete A Plant\n5.Exit");
+                    "\nHere are the options to check out your virtual greenhouse:\n1.Add a New Plant\n2.Check out Greenhouse\n3.Update a Plant\n4. Delete A Plant\n5.Exit");
             response = input.nextInt();
             // response.toUpperCase();
             switch (response) {
                 case 1:
                     System.out.println("Add a Plant");
-                    MainMenu.newPlantInfo();
+                    MainMenu.addPlant();
                     break;
                 case 2:
                     System.out.println("Enter the GreenHouse!");
-                    MainMenu.getGreenHouse();
+                    MainMenu02.getGreenHouse();
                     break;
                 case 3:
                     System.out.println("Update Plant!");

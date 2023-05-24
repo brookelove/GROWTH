@@ -19,13 +19,13 @@ Type: Foliage,
 Variegation: Marble Queen
 
 Common_Name: Aluminium Plant,
-Botanical_Name: Pilea cadierei,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate;
-Growth: upright,
-BestArea: table,
-Type: Foliage,
+Botanical_Name: Pilea cadierei
+Light: bright, indirect
+Humidity: low
+Hydrate: moderate
+Growth: upright
+BestArea: table
+Type: Foliage
 Variegation: Marble Queen, Silver Spirnkles, Chinese Money Plant
 
 Common_Name: Arrowhead Vine,
