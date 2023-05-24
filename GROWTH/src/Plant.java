@@ -4,23 +4,21 @@ interface needsWater {
 abstract class Plant implements needsWater {
     private String id;
     private String commonName;
-    private String age;
     private Integer potSize;
     private Float price;
 
-    public Plant(String id, String commonName, String age, Integer potSize, Float price) {
+    public Plant(String id, String commonName, Integer potSize, Float price) {
         this.id = id;
         this.commonName = commonName;
-        this.age = age;
         this.potSize = potSize;
         this.price = price;
     }
     public String getCName() {
         return commonName;
     }
-    public String getAge() {
-        return age;
-    }
+//    public String getAge() {
+//        return age;
+//    }
     public abstract void grow();
     @Override
     public void waterPlant() {
@@ -28,8 +26,8 @@ abstract class Plant implements needsWater {
     }
 }
 class Succulent extends Plant {
-    public Succulent(String id,String commonName, String age, Integer potSize, Float price) {
-        super(id, commonName,age, potSize, price);
+    public Succulent(String id,String commonName, Integer potSize, Float price) {
+        super(id, commonName, potSize, price);
     }
     @Override
     public void grow(){
@@ -42,13 +40,12 @@ class Succulent extends Plant {
     }
 }
 class Foliage extends Plant {
-        private String variegationType;
-        private String leafShape;
-        private String leafColor;
-    public Foliage(String id, String commonName, String age, String variegationType, Integer potSize, Float price, String leafShape, String leafColor) {
-        super(id, commonName,age, potSize, price);
-        this.leafShape = leafShape;
-        this.leafColor = leafColor;
+//        private String leafShape;
+//        private String leafColor;
+    public Foliage(String id, String commonName, Integer potSize, Float price) {
+        super(id, commonName, potSize, price);
+//        this.leafShape = leafShape;
+//        this.leafColor = leafColor;
     }
     public void checkRoots() {
         System.out.println("Please check my roots!");

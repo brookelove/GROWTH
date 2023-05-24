@@ -7,21 +7,23 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-
 public class MainMenu {
     static Scanner input = new Scanner(System.in);
     static ArrayList<Foliage> foliageList = new ArrayList<Foliage>();
     static ArrayList<Succulent> succulentList = new ArrayList<Succulent>();
     static ArrayList <String> choiceList = new ArrayList<String>();
+    static ArrayList <String> choiceListType = new ArrayList<String>();
+
     static BufferedReader reader;
     public static void newPlantInfo() {
         String uuid;
         String commonName = null;
-        String howLong;
+//        String howLong;
         String hasVariegation;
-        String planType = null;
-        Integer potSize = null;
-        Float price = null;
+//        String planType = null;
+//        Integer potSize = null;
+        String response;
+//        Float price = null;
         String shapeOfLeafRes;
         String colorOfLeaf;
         Foliage newFoliage;
@@ -34,25 +36,21 @@ public class MainMenu {
             System.out.printf("%s - %s\n",i+1, choiceList.get(i));
         }
         Integer userInput = input.nextInt();
-        commonName = choiceList.get(userInput-1);
-        System.out.println("How long have you owned this plant?");
-        howLong = input.nextLine();
         System.out.println("What is the size of your pot in inches (please only use numbers)?");
-        potSize = input.nextInt();
-        System.out.println("How much did your plant cost?");
-        price = input.nextFloat();
+        response = input.next();
+        Integer potSize = Integer.parseInt(response);
 
-        if ( planType.equals("foliage")) {
-        System.out.println("Does your plant have variegation to it(colors or characteristics that you would not typically see).\nIf so what type is it or what are the color that you can see?");
-        hasVariegation = input.nextLine();
-        System.out.println("Since you have a foliage plant what type of leaf shape do you have?");
-        shapeOfLeafRes = input.nextLine();
-        System.out.println("What's the colors of your leaves?");
-        colorOfLeaf = input.nextLine();
-        newFoliage = new Foliage(uuid, commonName, howLong, hasVariegation, potSize, price, shapeOfLeafRes, colorOfLeaf);
+        System.out.println("How much did your plant cost?");
+        Float price = input.nextFloat();
+        commonName = choiceList.get(userInput-1);
+        String plantType = choiceListType.get(userInput-1);
+        System.out.println(plantType);
+
+        if(plantType.equals("Foliage,")) {
+        newFoliage = new Foliage(uuid, commonName, potSize, price);
         foliageList.add(newFoliage);
-        } else {
-            newSucculent = new Succulent(uuid,commonName,howLong, potSize, price);
+        } else if (plantType.equals("Succulent,")){
+            newSucculent = new Succulent(uuid,commonName,potSize, price);
             succulentList.add(newSucculent);
         }
     }
@@ -89,6 +87,7 @@ public class MainMenu {
         } while(response != 4);
     }
     public static void plantIndex(){
+        choiceList.clear();
         System.out.println("Welcome to Plantary! Your go to resource for the secrets of plants with our index.\nPlease type in a letter of the common name to see the plants that start with that letter.");
         String getGloss = input.nextLine();
         getGloss = getGloss.toUpperCase();
@@ -107,6 +106,16 @@ public class MainMenu {
                     if(namePlant.startsWith(getGloss)){
                         namePlant = namePlant.replace(",", "");
                         choiceList.add(namePlant);
+                        reader.readLine();
+                        reader.readLine();
+                        reader.readLine();
+                        reader.readLine();
+                        reader.readLine();
+                        reader.readLine();
+                        String lineType = reader.readLine();
+                        String splitType [] = lineType.split("Type: ");
+                        String plantType = Array.get(splitType,1).toString();
+                        choiceListType.add(plantType);
                     }
                 }
             }
@@ -122,8 +131,66 @@ public class MainMenu {
     }
     public static void plantary (){
         //place where they can get information on their plants
-        System.out.println("Let's get some information on your plants:\nWould you like to get either 1-Foliage\n2-Succulent\n3-All. Please choose one of the three numbers given");
+
+        System.out.println("Let's get some information on your plants:\nWould you like to get either\n1-Foliage\n2-Succulent\n3-All. Please choose one of the three numbers given");
         Integer plantChoiceNum = input.nextInt();
+
+        switch (plantChoiceNum) {
+            case 1:
+
+                if(foliageList.size() == 0){
+                    System.out.println("Please add a plant before trying to get more information about your own plants.");
+                } else {
+                    System.out.printf("Foliage List:");
+                    for (Foliage foliage: foliageList) {
+//                    System.out.printf("s% - s%",foliageList.get(i));
+
+//                        System.out.println(foliageList.get(i).toString());
+//                        System.out.println(i.getCName());
+                        try {
+                            reader = new BufferedReader(new FileReader("/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/PlantDictionary.txt"));
+                            String line = reader.readLine();
+                            while (true) {
+                                if (line == null) {
+                                    break;
+                                }
+                                line = reader.readLine();
+                                if (line.contains("Common_Name")) {
+                                    String splitLine [] =  line.split("Common_Name: ");
+                                    String namePlant = Array.get(splitLine,1).toString();
+                                    if(namePlant.contains(foliage.getCName())){
+                                        System.out.println(line);
+                                        for(int i = 0; i < 5; i++){
+                                            System.out.println(reader.readLine());
+                                        }
+
+                                    }
+                                }
+                            }
+                            reader.close();
+                        } catch (NullPointerException e) {
+                            System.out.printf("");
+                        } catch (FileNotFoundException e) {
+                            throw new RuntimeException(e);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                }
+                break;
+            case 2:
+                System.out.printf("Total Foliage Added: %s\n", foliageList.size());
+                for (Integer i = 0; i < foliageList.size(); i ++) {
+                    System.out.println("List of names:");
+                    System.out.println(foliageList.get(i).getCName());
+                }
+                break;
+            case 3:
+                System.out.printf("Total Plants: %s\n", succulentList.size() + foliageList.size());
+                break;
+        }
+
         try{
             reader = new BufferedReader(new FileReader("/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/PlantDictionary.txt"));
             String line = reader.readLine();
@@ -132,16 +199,8 @@ public class MainMenu {
                     break;
                 }
                 line = reader.readLine();
-                if(plantChoiceNum.equals(1)) {
-                    //find all plants that are in the group and are equal to foliage
-                } else if (plantChoiceNum.equals(2)) {
-                    //find all plants that are in the group and are equal to succulent
-                } else {
-                    //find all plants that are in the group
-                }
             }
             reader.close();
-            System.out.println(choiceList);
         }catch (NullPointerException e){
             System.out.printf("");
         } catch (FileNotFoundException e) {
