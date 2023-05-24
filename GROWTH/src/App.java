@@ -1,4 +1,3 @@
-import java.util.*;
 import java.util.Scanner;
 
 public class App {
@@ -9,39 +8,40 @@ public class App {
                 "Welcome to GROWTH! This is a place where you can categorize your plants as well as learn about your plants health!");
 
         String mainMenu;
-        String response;
+        Integer response;
         // need to use the common name vs the actual name option
         // System.out.println("You choose: " + mainMenu);
         do {
             System.out.println(
-                    "Here are the options to check out your virtual greenhouse:\nA.Add a New Plant\nB.Check out Greenhouse\nC.Update a Plant\nD. Delete A Plant\nE. Get Info\nF.Exit");
-            response = input.nextLine().toUpperCase();
+                    "Here are the options to check out your virtual greenhouse:\n1.Add a New Plant\n2.Check out Greenhouse\n3.Update a Plant\n4. Delete A Plant\n5. Get Info\n6.Exit");
+            response = input.nextInt();
             // response.toUpperCase();
             switch (response) {
-                case "A":
+                case 1:
                     System.out.println("Great lets add a new plant!");
-                    MainMenuOptions.newPlantInfo();
+                    MainMenu.newPlantInfo();
                     break;
-                case "B":
+                case 2:
                     System.out.println("Onto the GreenHouse!");
-                    MainMenuOptions.getGreenHouse();
+                    MainMenu.getGreenHouse();
                     break;
-                case "C":
+                case 3:
                     System.out.println("Lets update that Plant!");
                     break;
-                case "D":
+                case 4:
                     System.out.println("Lets remove one of you plants from the inventory!");
                     break;
-                case "E":
-                    System.out.println("Lets update that Plant!");
+                case 5:
+                    System.out.println("Plantary");
+                    MainMenu.plantDictionary();
                     break;
-                case "F":
+                case 6:
                     System.out.println("Ok we will see you later!");
                     System.exit(0);
                     break;
                 default:
                     System.out.printf("%s is not valid please try again.", response);
             }
-        } while (response != "F");
+        } while (response != 6);
     }
 }
