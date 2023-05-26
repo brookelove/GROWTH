@@ -26,7 +26,6 @@ public class MainMenu {
                     plantRes.add(commonName);
                     for(int i=1;i < 8;i++){
                         plantRes.add(read.readLine());
-//                        System.out.printf(read.readLine());
                     }
                 }
             }

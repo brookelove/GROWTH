@@ -41,11 +41,11 @@ public class MainMenu02 {
         System.out.println(plantType);
 
         if(plantType.equals("Foliage,")) {
-        newFoliage = new Foliage(uuid, commonName, potSize, price);
-        foliageList.add(newFoliage);
+        //newFoliage = new Foliage(uuid, commonName, potSize, price)
+            // foliageList.add(newFoliage);
         } else if (plantType.equals("Succulent,")){
-            newSucculent = new Succulent(uuid,commonName,potSize, price);
-            succulentList.add(newSucculent);
+           // newSucculent = new Succulent(uuid,commonName,potSize, price);
+            //succulentList.add(newSucculent);
         }
     }
     public static void getGreenHouse() {
