@@ -6,11 +6,11 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 public class MainMenu {
+    Exception NoPlant;
     static BufferedReader read;
     static Scanner input = new Scanner(System.in);
     static PlantConatinaer<Foliage> foliagePlantContainer = new PlantConatinaer<>();
     static PlantConatinaer<Succulent> succulentPlantConatinaer = new PlantConatinaer<>();
-//    ArrayList<Foliage> foliageList = new ArrayList<>();
     public static ArrayList<String> findPlant(String commonName) {
         ArrayList <String> plantRes = new ArrayList<String>();
         Integer choice = 1;
@@ -104,49 +104,64 @@ public class MainMenu {
             } else {
                 spikes = false;
             }
-            succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName,potSize,price, variation,spikes,plantInfo));
+            succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName,potSize,price,variation,spikes,plantInfo));
         }
     }
     public static void plantary () {
         List <Foliage> foliageList = foliagePlantContainer.getAllPlants();
         List <Succulent> succulentList = succulentPlantConatinaer.getAllPlants();
         if(foliageList.size() == 0 && succulentList.size() == 0) {
-            System.out.println("Your total plants are at 0. Please add more plants before continuing.");
+            System.out.println("Please add a plants to your greenhouse its empty!");
             return;
         }
         System.out.println("This is the list of plants in your greenhouse\nList of Foliage:\n");
-        for (int i = 0; i < foliageList.size(); i++) {
-            System.out.printf("%s - %s",i+1,foliageList.get(i).toString());
+        if(foliageList.size() == 0){
+            System.out.println("0");
+        } else {
+            for (int i = 0; i < foliageList.size(); i++) {
+                System.out.printf("%s - %s",i+1,foliageList.get(i).getName());
+            }
         }
         System.out.println("\nList of Succulents:\n");
-        for (int i = 0; i < succulentList.size(); i++) {
-            System.out.printf("%s - %s",i+1,succulentList.get(i).toString());
+        if(succulentList.size() == 0){
+            System.out.println("0");
+        } else {
+            for (int i = 0; i < succulentList.size(); i++) {
+                System.out.printf("%s - %s",i+1,succulentList.get(i).getName());
+            }
         }
+        System.out.printf("Total Plants: %s\n",succulentList.size() + foliageList.size());
     }
-    public static void lookAtPlants() {
+    public static void lookAtPlants() throws PlantExceptions.NoPlantFound {
         System.out.println("This is the GreenHouse! A place where you can see the total list of items in you");
         Integer response;
         do {
             System.out.println(
-                    "Here are the options to check out your virtual greenhouse:\n1.Succulents\n2.Foliage\n3.Plants\n4.Plantary: Learn more info about your plants\n5.Go Back to Main Menu");
+                    "Here are the options to check out your virtual greenhouse:\n1.Succulents\n2.Foliage\n3.Plantary: Learn more info about your plants\n4.Go Back to Main Menu");
             response = input.nextInt();
             switch (response) {
                 case 1:
-                    System.out.printf("Total Succulents: %s\n", succulentPlantConatinaer.getAllPlants().size());
-                    System.out.println(succulentPlantConatinaer.getAllPlants().get(1));
+                    if(succulentPlantConatinaer.getAllPlants().size() == 0) {
+                        throw new PlantExceptions.NoPlantFound("There is no plants in your greenhouse! Go add a plant first, then come back!");
+                    } else {
+                        System.out.printf("Total Succulents: %s\n", succulentPlantConatinaer.getAllPlants().size());
+                        System.out.println(succulentPlantConatinaer.getAllPlants().get(0).getName());
+                    }
                     //for loop to list all foli by common name and botanical name
                     break;
                 case 2:
-                    System.out.printf("Total Foliage: %s\n", foliagePlantContainer.getAllPlants().size());
+                    if(foliagePlantContainer.getAllPlants().size() == 0) {
+                        throw new PlantExceptions.NoPlantFound("There is no plants in your greenhouse! Go add a plant first, then come back!");
+                    } else {
+                        System.out.printf("Total Foliage: %s\n", foliagePlantContainer.getAllPlants().size());
+                        System.out.println(foliagePlantContainer.getAllPlants().get(0).getName());
+                    }
                     //for loop to list all succ by common name and botanical name
                     break;
                 case 3:
-                    System.out.printf("Total Plants: %s\n",succulentPlantConatinaer.getAllPlants().size() + foliagePlantContainer.getAllPlants().size());
-                    break;
-                case 4:
                     plantary();
                     break;
-                case 5:
+                case 4:
                     System.out.println("Great lets go back!");
                     return; // makes it return and go back rather than end the entire system
                 default:

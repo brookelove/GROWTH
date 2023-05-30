@@ -22,6 +22,11 @@ abstract class Plant {
     public String getName() {
         return commonName;
     }
+
+    public ArrayList<String> getInfo() {
+        return info;
+    }
+
     public abstract void grow();
 }
 class Succulent extends Plant {
