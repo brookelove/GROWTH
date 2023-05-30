@@ -30,7 +30,6 @@ public class MainMenu {
                 }
             }
             read.close();
-
         } catch (NullPointerException e) {
             System.out.printf("");
         } catch (FileNotFoundException e) {
@@ -84,14 +83,13 @@ public class MainMenu {
         System.out.println("Please choose from the list what plant you want by entering from the given numbers above:");
         Integer plantChoice = input.nextInt();
         String plant = plantChoiceArr.get(plantChoice-1);
-        System.out.printf("Before we add the plant we need to answer some questions for our records for: %s\nWhat size is your plant in now?", plant);
+        System.out.printf("Before we add the plant we need to answer some questions for our records for: %s\nWhat size is your plant in now?\n", plant);
         System.out.println("Size in inches:");
         potSize = input.nextInt();
-//        System.out.println("\n");
-        System.out.printf("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00");
+        System.out.printf("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00\n");
         System.out.println("Price: $");
         price = input.nextFloat();
-        System.out.printf("If your plant has variation, a different color, than the typical plant species then?");
+        System.out.printf("If your plant has variation, a different color, than the typical plant species then?\n");
         input.nextLine();
         System.out.println("Variegation:");
         variation = input.nextLine();
@@ -101,7 +99,8 @@ public class MainMenu {
         }
         uuid = UUID.randomUUID().toString();
         String commonName = plantResults.get(0).toString();
-        if(plantResults.get(7) == "Foliage"){
+        System.out.println(plantResults.get(7).toString());
+        if(plantResults.get(7).toString().contains("F")){
             foliagePlantContainer.addPlant(new Foliage(uuid, commonName,potSize,variation,price,plantInfo));
         } else {
             System.out.println("Does your plant have spikes?");
@@ -116,11 +115,42 @@ public class MainMenu {
             succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName,potSize,price, variation,spikes,plantInfo));
         }
     // need to reset the plant list choice back to being empty?
+        plantChoiceArr.clear();
+    }
+    public static void plantary () {
+
     }
     public static void lookAtPlants() {
         System.out.println("This is the GreenHouse! A place where you can see the total list of items in you");
-        System.out.printf("Total Succulents: %s\n", succulentPlantConatinaer.getAllPlants().size());
-        System.out.printf("Total Foliage: %s", foliagePlantContainer.getAllPlants().size());
+
+
+        Integer response;
+        do {
+            System.out.println(
+                    "Here are the options to check out your virtual greenhouse:\n1.Succulents\n2.Foliage\n3.Plants\n4.Plantary: Learn more info about plants\n5.Go Back to Main Menu");
+            response = input.nextInt();
+            switch (response) {
+                case 1:
+                    System.out.printf("Total Succulents: %s\n", succulentPlantConatinaer.getAllPlants().size());
+                    //for loop to list all foli by common name and botanical name
+                    break;
+                case 2:
+                    System.out.printf("Total Foliage: %s", foliagePlantContainer.getAllPlants().size());
+                    //for loop to list all succ by common name and botanical name
+                    break;
+                case 3:
+                    System.out.printf("Total Plants: %s",succulentPlantConatinaer.getAllPlants().size() + foliagePlantContainer.getAllPlants().size());
+                    break;
+                case 4:
+                    plantary();
+                    break;
+                case 5:
+                    System.out.println("Great lets go back!");
+                    return; // makes it return and go back rather than end the entire system
+                default:
+                    System.out.printf("%s is not valid please try again. Make sure you don't follow your response with spaces.", response);
+            }
+        } while(response != 4);
 
     }
 }

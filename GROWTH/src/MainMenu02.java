@@ -48,6 +48,7 @@ public class MainMenu02 {
             //succulentList.add(newSucculent);
         }
     }
+
     public static void getGreenHouse() {
         Integer response;
         do {
