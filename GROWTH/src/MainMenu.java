@@ -16,12 +16,8 @@ public class MainMenu {
         Integer choice = 1;
         try {
             read = new BufferedReader(new FileReader("/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/PlantDictionary.txt"));
-            String line = read.readLine();
-            while (true) {
-                if (line == null) {
-                    break;
-                }
-                line = read.readLine();
+            String line;
+            while ((line = read.readLine()) != null) {
                 if(line.contains(commonName)){
                     plantRes.add(commonName);
                     for(int i=1;i < 8;i++){
@@ -48,11 +44,11 @@ public class MainMenu {
         Boolean spikes;
         ArrayList<String> plantInfo = new ArrayList<>();
         ArrayList<String> plantChoiceArr = new ArrayList<>();
+        plantChoiceArr.clear();
 
         Integer choice = 1;
         System.out.println("Lets find the plant. Please give the first letter of the plant that you would like to add:");
         String letterRes = input.nextLine();
-
         try {
             read = new BufferedReader(new FileReader("/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/PlantDictionary.txt"));
             String line = read.readLine();
@@ -83,15 +79,12 @@ public class MainMenu {
         System.out.println("Please choose from the list what plant you want by entering from the given numbers above:");
         Integer plantChoice = input.nextInt();
         String plant = plantChoiceArr.get(plantChoice-1);
-        System.out.printf("Before we add the plant we need to answer some questions for our records for: %s\nWhat size is your plant in now?\n", plant);
-        System.out.println("Size in inches:");
+        System.out.printf("Before we add the plant we need to answer some questions for our records for: %s\nWhat size is your plant in now?\nSize in inches: ", plant);
         potSize = input.nextInt();
-        System.out.printf("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00\n");
-        System.out.println("Price: $");
+        System.out.printf("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00\nPrice: $ ");
         price = input.nextFloat();
         System.out.printf("If your plant has variation, a different color, than the typical plant species then?\n");
         input.nextLine();
-        System.out.println("Variegation:");
         variation = input.nextLine();
         ArrayList plantResults = findPlant(plant); //an arraylist
         for (int i = 1; i < plantResults.size()-1; i++) {
@@ -99,7 +92,6 @@ public class MainMenu {
         }
         uuid = UUID.randomUUID().toString();
         String commonName = plantResults.get(0).toString();
-        System.out.println(plantResults.get(7).toString());
         if(plantResults.get(7).toString().contains("F")){
             foliagePlantContainer.addPlant(new Foliage(uuid, commonName,potSize,variation,price,plantInfo));
         } else {
@@ -114,32 +106,42 @@ public class MainMenu {
             }
             succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName,potSize,price, variation,spikes,plantInfo));
         }
-    // need to reset the plant list choice back to being empty?
-        plantChoiceArr.clear();
     }
     public static void plantary () {
-
+        List <Foliage> foliageList = foliagePlantContainer.getAllPlants();
+        List <Succulent> succulentList = succulentPlantConatinaer.getAllPlants();
+        if(foliageList.size() == 0 && succulentList.size() == 0) {
+            System.out.println("Your total plants are at 0. Please add more plants before continuing.");
+            return;
+        }
+        System.out.println("This is the list of plants in your greenhouse\nList of Foliage:\n");
+        for (int i = 0; i < foliageList.size(); i++) {
+            System.out.printf("%s - %s",i+1,foliageList.get(i).toString());
+        }
+        System.out.println("\nList of Succulents:\n");
+        for (int i = 0; i < succulentList.size(); i++) {
+            System.out.printf("%s - %s",i+1,succulentList.get(i).toString());
+        }
     }
     public static void lookAtPlants() {
         System.out.println("This is the GreenHouse! A place where you can see the total list of items in you");
-
-
         Integer response;
         do {
             System.out.println(
-                    "Here are the options to check out your virtual greenhouse:\n1.Succulents\n2.Foliage\n3.Plants\n4.Plantary: Learn more info about plants\n5.Go Back to Main Menu");
+                    "Here are the options to check out your virtual greenhouse:\n1.Succulents\n2.Foliage\n3.Plants\n4.Plantary: Learn more info about your plants\n5.Go Back to Main Menu");
             response = input.nextInt();
             switch (response) {
                 case 1:
                     System.out.printf("Total Succulents: %s\n", succulentPlantConatinaer.getAllPlants().size());
+                    System.out.println(succulentPlantConatinaer.getAllPlants().get(1));
                     //for loop to list all foli by common name and botanical name
                     break;
                 case 2:
-                    System.out.printf("Total Foliage: %s", foliagePlantContainer.getAllPlants().size());
+                    System.out.printf("Total Foliage: %s\n", foliagePlantContainer.getAllPlants().size());
                     //for loop to list all succ by common name and botanical name
                     break;
                 case 3:
-                    System.out.printf("Total Plants: %s",succulentPlantConatinaer.getAllPlants().size() + foliagePlantContainer.getAllPlants().size());
+                    System.out.printf("Total Plants: %s\n",succulentPlantConatinaer.getAllPlants().size() + foliagePlantContainer.getAllPlants().size());
                     break;
                 case 4:
                     plantary();
