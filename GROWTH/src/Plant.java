@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 abstract class Plant {
     private String id;
@@ -5,13 +6,15 @@ abstract class Plant {
     private Integer potSize;
     private Float price;
     private String varegationType;
+    private ArrayList<String> info = new ArrayList<>();
 
-    public Plant(String id, String commonName, Integer potSize, Float price, String varegationType) {
+    public Plant(String id, String commonName, Integer potSize, Float price, String varegationType, ArrayList<String> info) {
         this.id = id;
         this.commonName = commonName;
         this.potSize = potSize;
         this.price = price;
         this.varegationType = varegationType;
+        this.info = info;
     }
     public String getId() {
         return id;
@@ -23,8 +26,8 @@ abstract class Plant {
 }
 class Succulent extends Plant {
     Boolean hasSpines;
-    public Succulent(String id,String commonName, Integer potSize, Float price,String varegation, Boolean hasSpines) {
-        super(id, commonName, potSize, price, varegation);
+    public Succulent(String id,String commonName, Integer potSize, Float price,String variegation, Boolean hasSpines, ArrayList<String> succulentInfo) {
+        super(id, commonName, potSize, price, variegation, succulentInfo);
         this.hasSpines = hasSpines;
     }
     @Override
@@ -33,9 +36,12 @@ class Succulent extends Plant {
     }
 }
 class Foliage extends Plant {
-    public Foliage(String id, String commonName, Integer potSize, String vareigation, Float price) {
-        super(id, commonName, potSize, price, vareigation);
+    public Foliage(String id, String commonName, Integer potSize, String vareigation, Float price, ArrayList<String> foliageInfo) {
+        super(id, commonName, potSize, price, vareigation, foliageInfo);
     }
+
+
+
     public void pruneLeaves() {
         System.out.printf("Please check your leaves of the %s plant to make sure that there are no pre-dying leaves", getName());
     }

@@ -1,669 +1,669 @@
 Common_Name: Wax Plant,
-Botanical_Name: Hoya carnosa,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: low-moderate,
-Growth: trailing,
-BestArea: stand or high up,
-Type: Foliage,
-Variegation: Hoya Mathilde, Indian Rope Hoya, Sweetheart Hoya, Hoya Linearis,
+Hoya carnosa,
+bright, indirect,
+low,
+low-moderate,
+trailing,
+stand or high up,
+Foliage,
+Hoya Mathilde, Indian Rope Hoya, Sweetheart Hoya, Hoya Linearis,
 
 Common_Name: Devil's Ivy,
 Botanical_Name: Epremnum areum,
-Light: low-moderate,
-Hydrate: moderate,
-Humidity: low,
-Growth: trailing,
-BestArea: stand or high up,
-Type: Foliage,
+low-moderate,
+moderate,
+low,
+trailing,
+stand or high up,
+Foliage,
 Variegation: Marble Queen
 
 Common_Name: Aluminium Plant,
-Botanical_Name: Pilea cadierei,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate;
-Growth: upright,
-BestArea: table,
-Type: Foliage,
+Botanical_Name: Pilea cadierei
+bright, indirect
+low
+moderate
+upright
+table
+Foliage
 Variegation: Marble Queen, Silver Spirnkles, Chinese Money Plant
 
 Common_Name: Arrowhead Vine,
 Botanical_Name: Syngonium podophyllum,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate;
-Growth: trailing,
-BestArea: table,
-Type: Foliage,
+bright, indirect,
+low,
+moderate;
+trailing,
+table,
+Foliage,
 Variegation: Albo Variegation,
 
 Common_Name: Swiss Cheese Vine,
 Botanical_Name: Monstera adansonii,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: moderate-high;
-Growth: climbing & trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+high,
+moderate-high;
+climbing & trailing,
+stand,
+Foliage,
 Variegation: Swiss Cheese Plant, Variegated Swiss Cheese Plant, Silver Leaf Monstera
 
 Common_Name: Peacock Plant,
 Botanical_Name: Calathea lietzei,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: moderate;
-Growth: clump,
-BestArea: table,
-Type: Foliage,
+bright, indirect,
+high,
+moderate;
+clump,
+table,
+Foliage,
 Variegation: Network Calathea
 
 Common_Name: Horse Head Philodendron,
 Botanical_Name: Philodendron bipennifulium,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: climbing,
-BestArea: table,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+climbing,
+table,
+Foliage,
 Variegation: Philodendron Birkin, White Princess, Prince of Orange, Pink Princess, Heartleaf, Philodendron Brasil, Velvet Leaf Philodendron, Philodendron Glorious, Skeleton Key, Red Bristle, Congo, Oak Leaf,
 
 Common_Name: Lipstick Plant,
 Botanical_Name: Aeschylus radicans,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+trailing,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Bengal Fig,
 Botanical_Name: Ficus benghalensis 'Audrey',
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: upright,
-BestArea: floor,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+upright,
+floor,
+Foliage,
 Variegation: Weeping Fig, Sabre Fig, Rubber Plant, Fiddle Leaf Fig, Rock Fig,
 
 Common_Name: Nerve Plant,
 Botanical_Name: Fittonia albivenis,
-Light: low-moderate,
-Humidity: medium,
-Hydrate: moderate;
-Growth: clumping,
-BestArea: table,
-Type: Foliage,
+low-moderate,
+medium,
+moderate;
+clumping,
+table,
+Foliage,
 Variegation:
 
 Common_Name: Giant White Bird of Paradise,
 Botanical_Name: Strelitzia nicolai,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+low,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation: Bird of Paradise,
 
 Common_Name: Eyelash Begonia,
 Botanical_Name: Begonia bowerae,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+high,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation: Exotic Begonia, Polka Dot Begonia, Mazae Begonia, Fuzzy Leaf Begonia, Painted Leaf Begonia
 
 Common_Name: Fancy Leaf Caladium,
 Botanical_Name: Caladium bicolor,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+high,
+high;
+clumping,
+stand,
+Foliage,
 Variegation: White Vine Arrow Leaf
 
 Common_Name: Chinese Evergreen,
 Botanical_Name: Aglaonema 'stripes',
-Light: low-moderate,
-Humidity: medium,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: table,
-Type: Foliage,
+low-moderate,
+medium,
+moderate-high;
+clumping,
+table,
+Foliage,
 Variegation:
 
 Common_Name: Polydactylum Anthurium,
 Botanical_Name: Anthurium polydactylum,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: moderate-high;
-Growth: climbing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+high,
+moderate-high;
+climbing,
+stand,
+Foliage,
 Variegation: Pearl Laceleaf, KIng Anthurium, Strap leaf Anthirium, Queen Antherium
 
 Common_Name: Ornamental Yam,
 Botanical_Name: Dioscorea dodecaneura,
-Light: bright, indirect, full-sun
-Humidity: medium,
-Hydrate: moderate-high;
-Growth: climbing & trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect, full-sun
+medium,
+moderate-high;
+climbing & trailing,
+stand,
+Foliage,
 Variegation: Elephants Foot Yam,
 
 Common_Name: Tractor Seat Plant,
 Botanical_Name: Strelitzia nicolai,
-Light: bright, indirect, full-sun
-Humidity: medium,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: floor,
-Type: Foliage,
+bright, indirect, full-sun
+medium,
+moderate-high;
+clumping,
+floor,
+Foliage,
 Variegation:
 
 Common_Name: Watermelon Peperomia,
-Botanical_Name: Peperomia argyreia,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
-Variegation: Emerald Ripple Peperomia, Baby Rubber Plant, Raindrop Peperomia, Cupid Peperomia
+Peperomia argyreia
+bright, indirect
+low
+moderate
+clumping
+stand
+Foliage
+Emerald Ripple Peperomia, Baby Rubber Plant, Raindrop Peperomia, Cupid Peperomia
 
 Common_Name: Queen of Hearts,
 Botanical_Name: Homalomeba rubescebs 'Maggie',
-Light: bright, indirect,
-Humidity: medium-high,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium-high,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation: Bird of Paradise,
 
 Common_Name: Satin Vine,
 Botanical_Name: Scindapsus,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+trailing,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Green Sheield Alocasia,
 Botanical_Name: Alocasia clypeolata,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+high,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation:Giant Taro, Black Velvet, Kris Plant, Zebra
 
 Common_Name: Elephant ear,
 Botanical_Name: Colocasia esculenta,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+low,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Spider Plant,
 Botanical_Name: Chlorophytum comosum,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: clumping & trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+clumping & trailing,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Grape Ivy,
 Botanical_Name: Cissus rhombifolia,
-Light: low-moderate,
-Humidity: medium,
-Hydrate: moderate-high;
-Growth: trailing,
-BestArea: stand,
-Type: Foliage,
+low-moderate,
+medium,
+moderate-high;
+trailing,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Watermelon Dishchida,
 Botanical_Name: Dischidia ovata,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+clumping,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Madagascar Dragon Tree,
 Botanical_Name:Dracaena marginata,
-Light: bright, indirect, full-sun
-Humidity: low,
-Hydrate: low;
-Growth: upright
-BestArea: stand,
-Type: Foliage,
+bright, indirect, full-sun
+low,
+low;
+upright
+stand,
+Foliage,
 Variegation: Snake Plant
 
 Common_Name: Sweedish Ivy ,
 Botanical_Name: Strelitzia nicolai,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+trailing,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Creeping Philodendron,
 Botanical_Name: Rhaphidophora decursiva,
-Light: low-moderate,
-Humidity: low,
-Hydrate: moderate;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+low-moderate,
+low,
+moderate;
+clumping,
+stand,
+Foliage,
 Variegation: Mini Monstera,
 
 Common_Name: Dwarf Umbrella Plant,
 Botanical_Name: Schefflera arboricola,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate;
-Growth: upright,
-BestArea: table,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate;
+upright,
+table,
+Foliage,
 Variegation:
 
 Common_Name: Purple Shamrock,
 Botanical_Name: Oxalis triangularis,
-Light: bright, indirect,
-Humidity: medium,
-Hydrate: moderate-high;
-Growth: clumping,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium,
+moderate-high;
+clumping,
+stand,
+Foliage,
 Variegation:
 
 Common_Name: Spanish Moss,
 Botanical_Name: Tillandsia usneoides,
-Light: bright, indirect,
-Humidity: medium-high,
-Hydrate: moderate-high;
-Growth: trailing,
-BestArea: stand,
-Type: Foliage,
+bright, indirect,
+medium-high,
+moderate-high;
+trailing,
+stand,
+Foliage,
 Variegation: King or Queen Air Plant
 
 Common_Name: Peace Lily,
 Botanical_Name: Spathiphyllum sp.,
-Light: low-moderate, bright, indirect,
-Humidity: moderate,
-Hydrate: moderate;
-Growth: clumping,
-BestArea: table,
-Type: Foliage,
+low-moderate, bright, indirect,
+moderate,
+moderate;
+clumping,
+table,
+Foliage,
 Variegation:
 
 Common_Name: Zanzibar Gem,
 Botanical_Name: Zamioculas zamiifolia,
-Light: low-moderate,
-Humidity: low,
-Hydrate: low,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Foliage,
+low-moderate,
+low,
+low,
+clumping,
+stand or bookshelf,
+Foliage,
 Variegation:
 
 Common_Name: Common Maidenhair Fern,
 Botanical_Name: Adiantum ,aethiopicum
-Light: bright, indirect,
-Humidity: medium-high,
-Hydrate: moderate-high,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Foliage,
+bright, indirect,
+medium-high,
+moderate-high,
+clumping,
+stand or bookshelf,
+Foliage,
 Variegation: Brittle Maidenhair Fern
 
 Common_Name: Heart-Leaf Fern,
 Botanical_Name: Hemionitis arifolia,
-Light: bright, indirect,
-Humidity: high,
-Hydrate: high,
-Growth: clumping,
-BestArea: table,
-Type: Foliage,
-Variegation:
+bright, indirect,
+high,
+high,
+clumping,
+table,
+Foliage,
+N/A
 
 Common_Name: Pack Tassel Fern,
 Botanical_Name: Huperzia squarrosa,
-Light: bright-indirect,
-Humidity: high,
-Hydrate: moderate-low,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Foliage,
-Variegation:
+bright-indirect,
+high,
+moderate-low,
+trailing,
+stand or bookshelf,
+Foliage,
+N/A
 
 Common_Name: Macho Fern,
 Botanical_Name: nephrolepis biserrata 'macho',
-Light: bright-indirect,
-Humidity: high,
-Hydrate: moderate-low,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Foliage,
+bright-indirect,
+high,
+moderate-low,
+clumping,
+stand or bookshelf,
+Foliage,
 Variegation: Boston Fern
 
 Common_Name: Elkhorn Fern,
 Botanical_Name: Platycerium bifurcatum,
-Light: bright-indirect,
-Humidity: medium-high,
-Hydrate: moderate,
-Growth: clumping, rosette, trailing,
-BestArea: stand or bookshelf,
-Type: Foliage,
+bright-indirect,
+medium-high,
+moderate,
+clumping, rosette, trailing,
+stand or bookshelf,
+Foliage,
 Variegation: Staghorn Fern
 
 Common_Name: Kentia Palm,
 Botanical_Name: Howea fortseria,
-Light: bright, indirect,
-Humidity: low-medium,
-Hydrate: moderate,
-Growth: clumping,
-BestArea: floor,
-Type: Foliage,
-Variegation:
+bright, indirect,
+low-medium,
+moderate,
+clumping,
+floor,
+Foliage,
+N/A
 
 Common_Name: Chinese Fan Palm,
 Botanical_Name: libistona chinensis,
-Light: bright, indirect, full sun,
-Humidity: low-medium,
-Hydrate: moderate,
-Growth: upright,
-BestArea: floor,
-Type: Foliage,
-Variegation:
+bright, indirect, full sun,
+low-medium,
+moderate,
+upright,
+floor,
+Foliage,
+N/A
 
 Common_Name: Lady Palm,
 Botanical_Name: Rhapis excelsa,
-Light: low-moderate,
-Humidity: low,
-Hydrate: moderate,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Foliage,
-Variegation:
+low-moderate,
+low,
+moderate,
+clumping,
+stand or bookshelf,
+Foliage,
+N/A
 
 Common_Name: Scaly Zamia,
 Botanical_Name: Lepidozamia peroffskyana,
-Light: bright, indirect,
-Humidity: low,
-Hydrate: low,
-Growth: clumping,
-BestArea: table,
-Type: Foliage,
-Variegation:
+bright, indirect,
+low,
+low,
+clumping,
+table,
+Foliage,
+N/A
 
 Common_Name: Sundew,
 Botanical_Name: Drosera sp.,
-Light: low-moderate,
-Humidity: medium,
-Hydrate: high,
-Growth: rosette,
-BestArea: window,
-Type: Foliage,
-Variegation:
+low-moderate,
+medium,
+high,
+rosette,
+window,
+Foliage,
+N/A
 
 Common_Name: Pitcher Plant,
 Botanical_Name: Nepenthes sp.,
-Light: bright, indirect, sun-full,
-Humidity: high,
-Hydrate: high,
-Growth: clumping,
-BestArea: overed balcony,
-Type: Foliage,
-Variegation:
+bright, indirect, sun-full,
+high,
+high,
+clumping,
+overed balcony,
+Foliage,
+N/A
 
 Common_Name: Cobra Lily,
 Botanical_Name: Darlingtonia californica,
-Light: bright-indirect, full sun,
-Humidity: low,
-Hydrate: high,
-Growth: clumping,
-BestArea: covered balcony,
-Type: Foliage,
-Variegation:
+bright-indirect, full sun,
+low,
+high,
+clumping,
+covered balcony,
+Foliage,
+N/A
 
 Common_Name: Venus Fly Trap,
 Botanical_Name: Dionaea muscipula,
-Light: full sun,
-Humidity: high,
-Hydrate: high,
-Growth: clumping,
-BestArea: covered balcony,
-Type: Foliage,
-Variegation:
+full sun,
+high,
+high,
+clumping,
+covered balcony,
+Foliage,
+N/A
 
 Common_Name: Trumpet Pitchers,
 Botanical_Name: Sarracenia sp.,
-Light: full sun,
-Humidity: low,
-Hydrate: low,
-Growth: clumping,
-BestArea: covered balcony,
-Type: Foliage,
-Variegation:
+full sun,
+low,
+low,
+clumping,
+covered balcony,
+Foliage,
+N/A
 
 Common_Name: Monstrose Apple Cactus,
 Botanical_Name: Cereus  hildmannianus 'monstrose',
-Light: low-moderate,
-Humidity: low,
-Hydrate: low,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Succulent,
+low-moderate,
+low,
+low,
+clumping,
+stand or bookshelf,
+Succulent,
 Variegation: Peruvian Apple Cactus
 
 Common_Name: String of Beans,
 Botanical_Name: Curio radicans,
-Light: bright-indirect,
-Humidity: none,
-Hydrate: low,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
+bright-indirect,
+none,
+low,
+trailing,
+stand or bookshelf,
+Succulent,
 Variegation: String of Pearls, Blue Chalk Sticks,
 
 Common_Name: Golden Rat Tail,
 Botanical_Name: Winterocerus aurespinus,
-Light: bright-indirect, full sun
-Humidity: none,
-Hydrate: low,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+bright-indirect, full sun
+none,
+low,
+clumping,
+stand or bookshelf,
+Succulent,
+N/A
 
 Common_Name: Christmas Carol Aloe,
 Botanical_Name: Aloe x 'Christmas carol',
-Light: bright-indirect, full sun,
-Humidity: low,
-Hydrate: low,
-Growth: rosette ,
-BestArea: stand or bookshelf,
-Type: Succulent,
+bright-indirect, full sun,
+low,
+low,
+rosette ,
+stand or bookshelf,
+Succulent,
 Variegation: Spiral Aloe
 
 Common_Name: Jade Plant,
 Botanical_Name: Crassula ovata,
-Light: bright-indirect, full sun,
-Humidity: none,
-Hydrate: low,
-Growth: upright,
-BestArea: stand or bookshelf,
-Type: Succulent,
+bright-indirect, full sun,
+none,
+low,
+upright,
+stand or bookshelf,
+Succulent,
 Variegation: String of Buttons
 
 Common_Name: Climbing Onion,
 Botanical_Name: Crassula ovata,
-Light: bright-indirect, full sun,
-Humidity: low,
-Hydrate: moderate,
-Growth: climbing,
-BestArea: table,
-Type: Succulent,
-Variegation:
+bright-indirect, full sun,
+low,
+moderate,
+climbing,
+table,
+Succulent,
+N/A
 
 Common_Name: Condom Plant,
 Botanical_Name: Ceropegia ampliata,
-Light: full sun,
-Humidity: medium,
-Hydrate: low,
-Growth: climbing & trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
+full sun,
+medium,
+low,
+climbing & trailing,
+stand or bookshelf,
+Succulent,
 Variegation: String of Needles, Chain of Hearts
 
 Common_Name: Rat Tail Cactus,
 Botanical_Name: Disocactus flagelliformis,
-Light: bright-indirect, full sun,
-Humidity: none,
-Hydrate: low-moderate,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+bright-indirect, full sun,
+none,
+low-moderate,
+trailing,
+stand or bookshelf,
+Succulent,
+N/A
 
 Common_Name: Laui,
 Botanical_Name: Echeveria laui,
-Light: bright-indirect
-Humidity: none,
-Hydrate: low,
-Growth: rosette,
-BestArea: table,
-Type: Succulent,
+bright-indirect
+none,
+low,
+rosette,
+table,
+Succulent,
 Variegation: Monroe
 
 Common_Name: Bear's Paw,
 Botanical_Name: Cotyledon tomentosa,
-Light: bright-indirect,
-Humidity: none,
-Hydrate: low-moderate,
-Growth: upright,
-BestArea: table,
-Type: Succulent,
-Variegation:
+bright-indirect,
+none,
+low-moderate,
+upright,
+table,
+Succulent,
+N/A
 
 Common_Name: Candleabra Tree,
 Botanical_Name: Euporbia ingens,
-Light: bright-indirect, full sun,
-Humidity: none,
-Hydrate: low,
-Growth: upright,
-BestArea: floor,
-Type: Succulent,
+bright-indirect, full sun,
+none,
+low,
+upright,
+floor,
+Succulent,
 Variegation: Firesticks, African Milk Thistle
 
 Common_Name: Green Ice,
 Botanical_Name: x Gasteraloe 'green ice',
-Light: bright-indirect,
-Humidity: none,
-Hydrate: low,
-Growth: rosette,
-BestArea: windowsill
-Type: Succulent,
-Variegation:
+bright-indirect,
+none,
+low,
+rosette,
+windowsill
+Succulent,
+N/A
 
 Common_Name: Zebra Cactus,
 Botanical_Name: Haworthiposis attenuata,
-Light: bright-indirect, full sun,
-Humidity: none,
-Hydrate: low,
-Growth: clump,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+bright-indirect, full sun,
+none,
+low,
+clump,
+stand or bookshelf,
+Succulent,
+N/A
 
 Common_Name: Bunny Ears Cactus,
 Botanical_Name: Opuntia microdasys,
-Light: full sun,
-Humidity: none,
-Hydrate: low,
-Growth: upright,
-BestArea: stand or bookshelf,
-Type: Succulent,
+full sun,
+none,
+low,
+upright,
+stand or bookshelf,
+Succulent,
 Variegation: Drooping Prickly Pear,
 
 Common_Name: Silver Dollar Vine,
 Botanical_Name: Xerosicyos danguyi,
-Light: full sun,
-Humidity: low,
-Hydrate: low,
-Growth: upright,
-BestArea: stand or bookshelf,
-Type: Succulent,
+full sun,
+low,
+low,
+upright,
+stand or bookshelf,
+Succulent,
 Variegation: Drooping Prickly Pear,
 
 Common_Name: Donkey Ears,
 Botanical_Name: Kalanchoe gastonis-bonnieri,
-Light: bright-indirect, full sun,
-Humidity: none,
-Hydrate: low-moderate,
-Growth: rosette,
-BestArea: stand or bookshelf,
-Type: Succulent,
+bright-indirect, full sun,
+none,
+low-moderate,
+rosette,
+stand or bookshelf,
+Succulent,
 Variegation: Flapjack,
 
 Common_Name: Carrion Plant,
-Botanical_Name: Stapelia grandiflora,
-Light: full sun,
-Humidity: none,
-Hydrate: low,
-Growth: clumping,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+Stapelia grandiflora,
+full sun,
+none,
+low,
+clumping,
+stand or bookshelf,
+Succulent,
+N/A
 
 Common_Name: Mistletoe Cactus,
-Botanical_Name: Rhipsalis baccifera,
-Light: bright indirect,
-Humidity: medium,
-Hydrate: low,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation: Flat Mistletoe Cactus, Harry Stemmed Rhipsalis,
+Rhipsalis baccifera,
+bright indirect,
+medium,
+low,
+trailing,
+stand or bookshelf,
+Succulent,
+Flat Mistletoe Cactus, Harry Stemmed Rhipsalis,
 
 Common_Name: Donkey's Tail,
-Botanical_Name: Sedum morganianum,
-Light: bright indirect,
-Humidity: low,
-Hydrate: low,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+Sedum morganianum,
+bright indirect,
+low,
+low,
+trailing,
+stand or bookshelf,
+Succulent
+N/A
 
 Common_Name: Fern Leaf Cactus,
-Botanical_Name: Selenicereus chrsocardium,
-Light: bright indirect,
-Humidity: medium,
-Hydrate: moderate,
-Growth: trailing,
-BestArea: stand or bookshelf,
-Type: Succulent,
-Variegation:
+Selenicereus chrsocardium,
+bright indirect,
+medium,
+moderate,
+trailing,
+stand or bookshelf,
+Succulent,
+N/A

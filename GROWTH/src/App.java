@@ -19,7 +19,7 @@ public class App {
                     break;
                 case 2:
                     System.out.println("Enter the GreenHouse!");
-                    MainMenu02.getGreenHouse();
+                    MainMenu.lookAtPlants();
                     break;
                 case 3:
                     System.out.println("Update Plant!");
