@@ -6,140 +6,405 @@ low-moderate,
 trailing,
 stand or high up,
 Foliage,
-Hoya Mathilde, Indian Rope Hoya, Sweetheart Hoya, Hoya Linearis,
+Hoya Mathilde, Krimson Queen, Krimson Princess, Indian Rope Hoya
+
+Common_Name: Sweetheart Hoya,
+Hoya kerri,
+bright, indirect,
+high
+low-moderate,
+climbing,
+tall area bookshelf,
+Foliage
+Sweetheart Hoya - yellow,
+
+Common_Name: Hoya Linearis,
+Hoya lineraris
+bright, indirect,
+low
+moderate,
+trailing,
+bookshelf,
+Foliage,
+Hoya linearis - white
 
 Common_Name: Devil's Ivy,
-Botanical_Name: Epremnum areum,
+Epremnum areum,
 low-moderate,
 moderate,
 low,
 trailing,
 stand or high up,
 Foliage,
-Variegation: Marble Queen
+Marble Queen, Golden Pothos, Jade, Lime, Neon, Tricolor
 
 Common_Name: Aluminium Plant,
-Botanical_Name: Pilea cadierei
+Pilea cadierei
 bright, indirect
 low
 moderate
 upright
 table
 Foliage
-Variegation: Marble Queen, Silver Spirnkles, Chinese Money Plant
+Aluminium Plant - white sprinkes
+
+Common_Name: Silver Spirnkles,
+Pilea sp. 'No ID',
+bright-indirect,
+medium,
+low-moderate,
+trailing,
+stand,
+Foliage,
+None
+
+Common_Name: Chinese Money Plant,
+Pilea peperomiodes,
+bright, indirect,
+medium,
+moderate,
+clumping,
+table-top,
+Foliage,
+White Splash
 
 Common_Name: Arrowhead Vine,
-Botanical_Name: Syngonium podophyllum,
+Syngonium podophyllum,
 bright, indirect,
 low,
 moderate;
 trailing,
 table,
 Foliage,
-Variegation: Albo Variegation,
+Variegation: Arrowhead Vine - albo(white),
 
 Common_Name: Swiss Cheese Vine,
-Botanical_Name: Monstera adansonii,
+Monstera adansonii,
 bright, indirect,
 high,
 moderate-high;
 climbing & trailing,
 stand,
 Foliage,
-Variegation: Swiss Cheese Plant, Variegated Swiss Cheese Plant, Silver Leaf Monstera
+Variegated Swiss Cheese Plant - yellow, Variegated Swiss Cheese Plant - albo(white), Variegated Swiss Cheese Plant - mint(light green)
+
+Common_Name: Swiss Cheese Plant,
+Monstera deliciosa,
+bright, indirect,
+medium,
+moderate,
+climbing,
+floor and stand,
+Foliage
+Thai Constellation, Albo Borsigiana, Aurea (or Marmorata), Mint Monstera, Monstera deliciosa ‘Variegata'- albo (white)
+
+Common_Name: Silver Leaf Monstera,
+Monstera siltepecana,
+bright, indirect,
+high,
+moderate,
+climbing and trailinng,
+stand,
+Foliage
+None
 
 Common_Name: Peacock Plant,
-Botanical_Name: Calathea lietzei,
+Calathea lietzei,
 bright, indirect,
 high,
 moderate;
 clump,
 table,
 Foliage,
-Variegation: Network Calathea
+None
+
+Common_Name: Network Calathea,
+Goeppertia legeljianii,
+bright, indirect,
+low,
+moderate,
+upright,
+tabletop,
+Foliage
+None
 
 Common_Name: Horse Head Philodendron,
-Botanical_Name: Philodendron bipennifulium,
+Philodendron bipennifulium,
 bright, indirect,
 medium,
 moderate;
 climbing,
 table,
 Foliage,
-Variegation: Philodendron Birkin, White Princess, Prince of Orange, Pink Princess, Heartleaf, Philodendron Brasil, Velvet Leaf Philodendron, Philodendron Glorious, Skeleton Key, Red Bristle, Congo, Oak Leaf,
+Violin, Splash Gordon
+
+Common_Name: Philodendron Birkin,
+Philodendron 'birkin',
+bright, indirect,
+low,
+moderate,
+trailing,
+Foliage,
+White Wave
+
+Common_Name: White Princess,
+Philodendron erubescens,
+bright, indirect,
+medium,
+moderate,
+clumping and trailing,
+Foliage,
+Prince of Orange, Pink Princess, Red Emerlad, Burle Marx, White Wizard, Dark Lord
+
+Common_Name: Heartleaf,
+Philodenron hederaceum,
+bright, indirect,
+medium,
+moderate,
+climbing and trailing,
+Foliage,
+Heartleaf- albo(white), Philodendron Brasil, Velvet Leaf Philodendron,
+
+Common_Name: Philodendron Glorious,
+Philodendron melanochrysum x gloriosum 'glorious',
+bright, indirect,
+high
+high
+climbing
+bookshelf and stand,
+Foliage,
+None
+
+Common_Name: Oak Leaf Philodendron,
+Philodendron pedatum,
+bright, indirect,
+medium,
+moderate,
+climbing,
+floor,
+Foliage,
+Florida Beauty
+
+Common_Name: Red Bristle,
+Philodendron squamiferum,
+bright, indirect,
+medium,
+moderate,
+climbing,
+tabletop,
+Floor,
+None
+
+
+Common_Name: Congo,
+Philodendron tatei ssp. melancholorum,
+bright, inidrect,
+medium,
+moderate,
+clumping,
+flooor and covered balcony,
+None
 
 Common_Name: Lipstick Plant,
-Botanical_Name: Aeschylus radicans,
+Aeschylus radicans,
 bright, indirect,
 medium,
 moderate;
 trailing,
 stand,
 Foliage,
-Variegation:
+None
+
+Common_Name: Skeleton Key,
+Philodendron tortum,
+bright, indirect,
+high,
+high;
+climbing,
+tabletop,
+Foliage,
+None
 
 Common_Name: Bengal Fig,
-Botanical_Name: Ficus benghalensis 'Audrey',
+Ficus benghalensis 'Audrey',
 bright, indirect,
 medium,
 moderate;
 upright,
 floor,
 Foliage,
-Variegation: Weeping Fig, Sabre Fig, Rubber Plant, Fiddle Leaf Fig, Rock Fig,
+None
+
+Common_Name: Weeping Fig,
+Ficus benjamina,
+bright, indirect,
+medium-high,
+moderate,
+upright,
+floor,
+Foliage,
+Weeping Fig Vareigation - white on sides
+
+Common_Name: Sabre Fig,
+Ficus binnendijkii,
+bright-indirect,
+medium,
+medium,
+upright,
+floor and covered balcony,
+Foliage,
+None
+
+Common_Name: Rubber Plant,
+Ficus elastica,
+bright-indirect,
+medium,
+moderate,
+upright,
+floor,
+Foliage,
+Tineke, Burgundy,
+
+Common_Name: Fiddle Leaf Fig,
+Ficus lyrata,
+bright-indirect,
+medium-high,
+moderate,
+upright,
+floor,
+Foliage,
+None
+
+Commmon_Name: Rock Fig,
+Ficus petiolaris,
+bright-indirect,
+medium,
+moderate,
+upright
+Foliage,
+None
 
 Common_Name: Nerve Plant,
-Botanical_Name: Fittonia albivenis,
+Fittonia albivenis,
 low-moderate,
 medium,
 moderate;
 clumping,
 table,
 Foliage,
-Variegation:
+None,
 
 Common_Name: Giant White Bird of Paradise,
-Botanical_Name: Strelitzia nicolai,
+Strelitzia nicolai,
 bright, indirect,
 low,
 moderate-high;
 clumping,
-stand,
+floor + covered balcony,
 Foliage,
-Variegation: Bird of Paradise,
+None,
+
+Common_Name: Bird of Paradise,
+Streliyzia reginae,
+bright inidrect,
+low,
+moderate,
+clumping,
+floor + covered balcony
+Foliage,
+None,
 
 Common_Name: Eyelash Begonia,
-Botanical_Name: Begonia bowerae,
+Begonia bowerae,
 bright, indirect,
 high,
 moderate-high;
 clumping,
 stand,
 Foliage,
-Variegation: Exotic Begonia, Polka Dot Begonia, Mazae Begonia, Fuzzy Leaf Begonia, Painted Leaf Begonia
+None,
+
+Common_Name: Exotic Begonia,
+Begonia brevirimosa,
+bright, indirect,
+high,
+moderate,
+clumping,
+tabletop,
+Foliage
+None
+Common_Name: Polka Dot Begonia,
+Begonia maculate,
+bright-indirect,
+medium,
+moderate,
+upright,
+table,
+Foliage,
+None,
+
+Common_Name: Mazae Begonia,
+Begonia mazae,
+bright-indirect,
+medium-high,
+moderate,
+trailing,
+bookshelf,
+Foliage,
+None
+
+Common_Name: Fuzzy Leaf Begonia,
+Begonia peltata,
+bright-indirect,
+medium,
+moderate-high,
+clumping,
+table,
+Foliage,
+None,
+
+Common_Name: Painted Leaf Begonia,
+Begonia Rex,
+bright-indirect,
+high,
+moderate,
+clumping,
+table,
+Foliage,
+None
 
 Common_Name: Fancy Leaf Caladium,
-Botanical_Name: Caladium bicolor,
-bright, indirect,
+Caladium bicolor,
+bright-indirect,
 high,
 high;
 clumping,
 stand,
 Foliage,
-Variegation: White Vine Arrow Leaf
+None
+
+Common_Name: White Vine Arrow Leaf
+Caladium lindenii,
+bright-indirect,
+high,
+high,
+clumping,
+tabletop,
+Foliage,
+None
 
 Common_Name: Chinese Evergreen,
-Botanical_Name: Aglaonema 'stripes',
+Aglaonema 'stripes',
 low-moderate,
 medium,
 moderate-high;
 clumping,
 table,
 Foliage,
-Variegation:
+None
 
 Common_Name: Polydactylum Anthurium,
-Botanical_Name: Anthurium polydactylum,
+Anthurium polydactylum,
 bright, indirect,
 high,
 moderate-high;
@@ -149,7 +414,7 @@ Foliage,
 Variegation: Pearl Laceleaf, KIng Anthurium, Strap leaf Anthirium, Queen Antherium
 
 Common_Name: Ornamental Yam,
-Botanical_Name: Dioscorea dodecaneura,
+Dioscorea dodecaneura,
 bright, indirect, full-sun
 medium,
 moderate-high;
@@ -159,7 +424,7 @@ Foliage,
 Variegation: Elephants Foot Yam,
 
 Common_Name: Tractor Seat Plant,
-Botanical_Name: Strelitzia nicolai,
+Strelitzia nicolai,
 bright, indirect, full-sun
 medium,
 moderate-high;
@@ -179,17 +444,17 @@ Foliage
 Emerald Ripple Peperomia, Baby Rubber Plant, Raindrop Peperomia, Cupid Peperomia
 
 Common_Name: Queen of Hearts,
-Botanical_Name: Homalomeba rubescebs 'Maggie',
+Homalomeba rubescebs 'Maggie',
 bright, indirect,
 medium-high,
 moderate-high;
 clumping,
 stand,
 Foliage,
-Variegation: Bird of Paradise,
+None
 
 Common_Name: Satin Vine,
-Botanical_Name: Scindapsus,
+Scindapsus,
 bright, indirect,
 medium,
 moderate;
@@ -199,7 +464,7 @@ Foliage,
 Variegation:
 
 Common_Name: Green Sheield Alocasia,
-Botanical_Name: Alocasia clypeolata,
+Alocasia clypeolata,
 bright, indirect,
 high,
 moderate-high;
@@ -209,7 +474,7 @@ Foliage,
 Variegation:Giant Taro, Black Velvet, Kris Plant, Zebra
 
 Common_Name: Elephant ear,
-Botanical_Name: Colocasia esculenta,
+Colocasia esculenta,
 bright, indirect,
 low,
 moderate-high;
@@ -219,7 +484,7 @@ Foliage,
 Variegation:
 
 Common_Name: Spider Plant,
-Botanical_Name: Chlorophytum comosum,
+Chlorophytum comosum,
 bright, indirect,
 medium,
 moderate;
@@ -229,7 +494,7 @@ Foliage,
 Variegation:
 
 Common_Name: Grape Ivy,
-Botanical_Name: Cissus rhombifolia,
+Cissus rhombifolia,
 low-moderate,
 medium,
 moderate-high;
@@ -239,7 +504,7 @@ Foliage,
 Variegation:
 
 Common_Name: Watermelon Dishchida,
-Botanical_Name: Dischidia ovata,
+Dischidia ovata,
 bright, indirect,
 medium,
 moderate;
@@ -259,7 +524,7 @@ Foliage,
 Variegation: Snake Plant
 
 Common_Name: Sweedish Ivy ,
-Botanical_Name: Strelitzia nicolai,
+Strelitzia nicolai,
 bright, indirect,
 medium,
 moderate;
@@ -269,7 +534,7 @@ Foliage,
 Variegation:
 
 Common_Name: Creeping Philodendron,
-Botanical_Name: Rhaphidophora decursiva,
+Rhaphidophora decursiva,
 low-moderate,
 low,
 moderate;
@@ -279,7 +544,7 @@ Foliage,
 Variegation: Mini Monstera,
 
 Common_Name: Dwarf Umbrella Plant,
-Botanical_Name: Schefflera arboricola,
+Schefflera arboricola,
 bright, indirect,
 medium,
 moderate;
@@ -289,7 +554,7 @@ Foliage,
 Variegation:
 
 Common_Name: Purple Shamrock,
-Botanical_Name: Oxalis triangularis,
+Oxalis triangularis,
 bright, indirect,
 medium,
 moderate-high;
@@ -299,7 +564,7 @@ Foliage,
 Variegation:
 
 Common_Name: Spanish Moss,
-Botanical_Name: Tillandsia usneoides,
+Tillandsia usneoides,
 bright, indirect,
 medium-high,
 moderate-high;
@@ -309,7 +574,7 @@ Foliage,
 Variegation: King or Queen Air Plant
 
 Common_Name: Peace Lily,
-Botanical_Name: Spathiphyllum sp.,
+Spathiphyllum sp.,
 low-moderate, bright, indirect,
 moderate,
 moderate;
@@ -319,7 +584,7 @@ Foliage,
 Variegation:
 
 Common_Name: Zanzibar Gem,
-Botanical_Name: Zamioculas zamiifolia,
+Zamioculas zamiifolia,
 low-moderate,
 low,
 low,
@@ -329,7 +594,7 @@ Foliage,
 Variegation:
 
 Common_Name: Common Maidenhair Fern,
-Botanical_Name: Adiantum ,aethiopicum
+Adiantum ,aethiopicum
 bright, indirect,
 medium-high,
 moderate-high,
@@ -339,27 +604,27 @@ Foliage,
 Variegation: Brittle Maidenhair Fern
 
 Common_Name: Heart-Leaf Fern,
-Botanical_Name: Hemionitis arifolia,
+Hemionitis arifolia,
 bright, indirect,
 high,
 high,
 clumping,
 table,
 Foliage,
-N/A
+None
 
 Common_Name: Pack Tassel Fern,
-Botanical_Name: Huperzia squarrosa,
+Huperzia squarrosa,
 bright-indirect,
 high,
 moderate-low,
 trailing,
 stand or bookshelf,
 Foliage,
-N/A
+None
 
 Common_Name: Macho Fern,
-Botanical_Name: nephrolepis biserrata 'macho',
+nephrolepis biserrata 'macho',
 bright-indirect,
 high,
 moderate-low,
@@ -369,7 +634,7 @@ Foliage,
 Variegation: Boston Fern
 
 Common_Name: Elkhorn Fern,
-Botanical_Name: Platycerium bifurcatum,
+Platycerium bifurcatum,
 bright-indirect,
 medium-high,
 moderate,
@@ -379,97 +644,97 @@ Foliage,
 Variegation: Staghorn Fern
 
 Common_Name: Kentia Palm,
-Botanical_Name: Howea fortseria,
+Howea fortseria,
 bright, indirect,
 low-medium,
 moderate,
 clumping,
 floor,
 Foliage,
-N/A
+None
 
 Common_Name: Chinese Fan Palm,
-Botanical_Name: libistona chinensis,
+libistona chinensis,
 bright, indirect, full sun,
 low-medium,
 moderate,
 upright,
 floor,
 Foliage,
-N/A
+None
 
 Common_Name: Lady Palm,
-Botanical_Name: Rhapis excelsa,
+Rhapis excelsa,
 low-moderate,
 low,
 moderate,
 clumping,
 stand or bookshelf,
 Foliage,
-N/A
+None
 
 Common_Name: Scaly Zamia,
-Botanical_Name: Lepidozamia peroffskyana,
+Lepidozamia peroffskyana,
 bright, indirect,
 low,
 low,
 clumping,
 table,
 Foliage,
-N/A
+None
 
 Common_Name: Sundew,
-Botanical_Name: Drosera sp.,
+Drosera sp.,
 low-moderate,
 medium,
 high,
 rosette,
 window,
 Foliage,
-N/A
+None
 
 Common_Name: Pitcher Plant,
-Botanical_Name: Nepenthes sp.,
+Nepenthes sp.,
 bright, indirect, sun-full,
 high,
 high,
 clumping,
 overed balcony,
 Foliage,
-N/A
+None
 
 Common_Name: Cobra Lily,
-Botanical_Name: Darlingtonia californica,
+Darlingtonia californica,
 bright-indirect, full sun,
 low,
 high,
 clumping,
 covered balcony,
 Foliage,
-N/A
+None
 
 Common_Name: Venus Fly Trap,
-Botanical_Name: Dionaea muscipula,
+Dionaea muscipula,
 full sun,
 high,
 high,
 clumping,
 covered balcony,
 Foliage,
-N/A
+None
 
 Common_Name: Trumpet Pitchers,
-Botanical_Name: Sarracenia sp.,
+Sarracenia sp.,
 full sun,
 low,
 low,
 clumping,
 covered balcony,
 Foliage,
-N/A
+None
 
 Common_Name: Monstrose Apple Cactus,
-Botanical_Name: Cereus  hildmannianus 'monstrose',
+Cereus  hildmannianus 'monstrose',
 low-moderate,
 low,
 low,
@@ -479,7 +744,7 @@ Succulent,
 Variegation: Peruvian Apple Cactus
 
 Common_Name: String of Beans,
-Botanical_Name: Curio radicans,
+Curio radicans,
 bright-indirect,
 none,
 low,
@@ -489,17 +754,17 @@ Succulent,
 Variegation: String of Pearls, Blue Chalk Sticks,
 
 Common_Name: Golden Rat Tail,
-Botanical_Name: Winterocerus aurespinus,
+Winterocerus aurespinus,
 bright-indirect, full sun
 none,
 low,
 clumping,
 stand or bookshelf,
 Succulent,
-N/A
+None
 
 Common_Name: Christmas Carol Aloe,
-Botanical_Name: Aloe x 'Christmas carol',
+Aloe x 'Christmas carol',
 bright-indirect, full sun,
 low,
 low,
@@ -509,7 +774,7 @@ Succulent,
 Variegation: Spiral Aloe
 
 Common_Name: Jade Plant,
-Botanical_Name: Crassula ovata,
+Crassula ovata,
 bright-indirect, full sun,
 none,
 low,
@@ -519,17 +784,17 @@ Succulent,
 Variegation: String of Buttons
 
 Common_Name: Climbing Onion,
-Botanical_Name: Crassula ovata,
+Crassula ovata,
 bright-indirect, full sun,
 low,
 moderate,
 climbing,
 table,
 Succulent,
-N/A
+None
 
 Common_Name: Condom Plant,
-Botanical_Name: Ceropegia ampliata,
+Ceropegia ampliata,
 full sun,
 medium,
 low,
@@ -539,17 +804,17 @@ Succulent,
 Variegation: String of Needles, Chain of Hearts
 
 Common_Name: Rat Tail Cactus,
-Botanical_Name: Disocactus flagelliformis,
+Disocactus flagelliformis,
 bright-indirect, full sun,
 none,
 low-moderate,
 trailing,
 stand or bookshelf,
 Succulent,
-N/A
+None
 
 Common_Name: Laui,
-Botanical_Name: Echeveria laui,
+Echeveria laui,
 bright-indirect
 none,
 low,
@@ -559,17 +824,17 @@ Succulent,
 Variegation: Monroe
 
 Common_Name: Bear's Paw,
-Botanical_Name: Cotyledon tomentosa,
+Cotyledon tomentosa,
 bright-indirect,
 none,
 low-moderate,
 upright,
 table,
 Succulent,
-N/A
+None
 
 Common_Name: Candleabra Tree,
-Botanical_Name: Euporbia ingens,
+Euporbia ingens,
 bright-indirect, full sun,
 none,
 low,
@@ -579,27 +844,27 @@ Succulent,
 Variegation: Firesticks, African Milk Thistle
 
 Common_Name: Green Ice,
-Botanical_Name: x Gasteraloe 'green ice',
+x Gasteraloe 'green ice',
 bright-indirect,
 none,
 low,
 rosette,
 windowsill
 Succulent,
-N/A
+None
 
 Common_Name: Zebra Cactus,
-Botanical_Name: Haworthiposis attenuata,
+Haworthiposis attenuata,
 bright-indirect, full sun,
 none,
 low,
 clump,
 stand or bookshelf,
 Succulent,
-N/A
+None
 
 Common_Name: Bunny Ears Cactus,
-Botanical_Name: Opuntia microdasys,
+Opuntia microdasys,
 full sun,
 none,
 low,
@@ -609,7 +874,7 @@ Succulent,
 Variegation: Drooping Prickly Pear,
 
 Common_Name: Silver Dollar Vine,
-Botanical_Name: Xerosicyos danguyi,
+Xerosicyos danguyi,
 full sun,
 low,
 low,
@@ -619,7 +884,7 @@ Succulent,
 Variegation: Drooping Prickly Pear,
 
 Common_Name: Donkey Ears,
-Botanical_Name: Kalanchoe gastonis-bonnieri,
+Kalanchoe gastonis-bonnieri,
 bright-indirect, full sun,
 none,
 low-moderate,
@@ -636,7 +901,7 @@ low,
 clumping,
 stand or bookshelf,
 Succulent,
-N/A
+None
 
 Common_Name: Mistletoe Cactus,
 Rhipsalis baccifera,
@@ -656,7 +921,7 @@ low,
 trailing,
 stand or bookshelf,
 Succulent
-N/A
+None
 
 Common_Name: Fern Leaf Cactus,
 Selenicereus chrsocardium,
@@ -666,4 +931,4 @@ moderate,
 trailing,
 stand or bookshelf,
 Succulent,
-N/A
+None

@@ -8,4 +8,14 @@ public class PlantExceptions extends Exception {
             super(message);
         }
     }
+    public static class NotAChar extends Exception {
+        public NotAChar(String message) {
+            super(message);
+        }
+    }
+    public static class NotAValidNum extends Exception {
+        public NotAValidNum(String message){
+            super(message);
+        }
+    }
 }
