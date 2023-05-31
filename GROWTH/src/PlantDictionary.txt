@@ -764,7 +764,7 @@ Succulent,
 None
 
 Common_Name: Christmas Carol Aloe,
-Aloe x 'Christmas carol',
+Aloe x'Christmas carol',
 bright-indirect, full sun,
 low,
 low,
@@ -844,7 +844,7 @@ Succulent,
 Variegation: Firesticks, African Milk Thistle
 
 Common_Name: Green Ice,
-x Gasteraloe 'green ice',
+Gasteraloe 'green ice',
 bright-indirect,
 none,
 low,

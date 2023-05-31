@@ -4,6 +4,11 @@ public class App {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
+        /*
+        DESCRIPTION: Sets the main menu on user response asking for where the user would link to be located
+        PRECONDITION: String response can not be null or integer that is 0;
+        POSTCONDITION: returns the string method that is fit of the user response dependent on what the user provides;
+        */
         System.out.println(
                 "Welcome to GROWTH! This is a place where you can categorize your plants as well as learn about your plants health!");
         Integer response;
@@ -18,17 +23,17 @@ public class App {
                     MainMenu.addPlant();
                     break;
                 case 2:
-                    System.out.println("Enter the GreenHouse!");
+                    System.out.println("GreenHouse");
                     MainMenu.lookAtPlants();
                     break;
                 case 3:
-                    System.out.println("Update Plant!");
+                    System.out.println("Update Plant");
                     break;
                 case 4:
-                    System.out.println("Remove a Plant");
+                    System.out.println("Remove Plant");
                     break;
                 case 5:
-                    System.out.println("Ok we will see you later!");
+                    System.out.println("Goodbye!");
                     System.exit(0);
                     break;
                 default:
