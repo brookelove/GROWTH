@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-abstract class Plant {
+abstract class Plant implements Serializable {
     private String id;
     private String commonName;
     private Integer potSize;

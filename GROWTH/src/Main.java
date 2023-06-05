@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Main {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
@@ -14,23 +14,23 @@ public class App {
         Integer response;
         do {
             System.out.println(
-                    "\nHere are the options to check out your virtual greenhouse:\n1.Add a New Plant\n2.Check out Greenhouse\n3.Update a Plant\n4. Delete A Plant\n5.Exit");
+                    "\nHere are the options to check out your virtual greenhouse:\n1.New Plant\n2.Greenhouse\n3.Update a Plant\n4.Delete A Plant\n5.Exit");
             response = input.nextInt();
             // response.toUpperCase();
             switch (response) {
                 case 1:
-                    System.out.println("Add a Plant");
+//                    System.out.println("Add a Plant");
                     MainMenu.addPlant();
                     break;
                 case 2:
-                    System.out.println("GreenHouse");
+//                    System.out.println("GreenHouse");
                     MainMenu.lookAtPlants();
                     break;
                 case 3:
-                    System.out.println("Update Plant");
+//                    System.out.println("Update Plant");
                     break;
                 case 4:
-                    System.out.println("Remove Plant");
+//                    System.out.println("Remove Plant");
                     break;
                 case 5:
                     System.out.println("Goodbye!");

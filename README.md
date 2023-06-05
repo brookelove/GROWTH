@@ -8,7 +8,7 @@
 
     1. Download or clone the application.
     2. Then navigate to your preferred IDE.
-    3. Open the code within the IDE and navigate to the App.java file where you can run the main file.
+    3. Open the code within the IDE and navigate to the Main.java file where you can run the main file.
     4. Make sure to change the path of the file to where it is currrenly stored
 
 ## Appendix
