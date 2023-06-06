@@ -33,6 +33,7 @@ public class PlantIndex {
                     System.out.println(line);
                 }
             }
+
             read.close();
         } catch (NullPointerException e) {
             System.out.printf("");

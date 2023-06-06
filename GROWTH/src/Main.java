@@ -31,6 +31,7 @@ public class Main {
                     break;
                 case 4:
 //                    System.out.println("Remove Plant");
+                    MainMenu.deletePlant();
                     break;
                 case 5:
                     System.out.println("Goodbye!");

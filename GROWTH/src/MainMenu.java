@@ -1,9 +1,14 @@
 import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.File;
+
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.nio.file.Files;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MainMenu {
     Exception NoPlant;
@@ -107,13 +112,13 @@ public class MainMenu {
             plant = plantChoiceArr.get(plantChoice-1);
             System.out.printf("Before we add the plant we need to answer some questions for our records for: %s\nWhat size is your plant in now?\nSize in inches: ", plant);
             potSize = input.nextInt();
-            System.out.printf("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00\nPrice: $ ");
+            System.out.println("Great! How much did your plant cost? Please enter just the numbers and decimal, if needed: Example 5.00\nPrice: $ ");
             price = input.nextFloat();
-            System.out.printf("If your plant has variation, a different color, than the typical plant species then?\n");
+            System.out.println("If your plant has variation, a different color, than the typical plant species then?\n");
             input.nextLine();
             variation = input.nextLine();
         } catch (InputMismatchException e) {
-            System.out.println("Please input a valid number ");
+            System.out.println("Please input a valid number.");
             letterRes = null;
             return;
         }
@@ -177,28 +182,27 @@ public class MainMenu {
         PRE-CONDITION: receiving user input from switch case regarding the use of leafLink  ;
         POST-CONDITION: returns list of genus species of plants as well as if the user inputs that they would like the list of all common names of that family they can get it;
         */
-        ArrayList <String> genusList = new ArrayList<>();
+        List <String> genusList = new ArrayList<>();
         System.out.println("Welcome of LeafLink the place where you can see GROWTH's current index of plants!");
         try {
             read = new BufferedReader(new FileReader(fileName));
             String line = read.readLine();
-            while (true) {
-                if (line == null) {
-                    break;
-                }
+            while (line != null) {
                 line = read.readLine();
-                if(line.contains("Common_Name:")){
+                if (line.contains("Common_Name:")) {
                     String genus = read.readLine();
-                    genus.replace(',',' ');
+                    genus.replace(',', ' ');
                     genus = genus.split(" ")[0];
                     genus.trim();
-//                    System.out.println(genus);
-                    if(!genusList.contains(genus)) {
+                    if (!genusList.contains(genus)) {
                         genusList.add(genus);
                     }
                 }
             }
             read.close();
+
+            // Print the genus list instead of a for loop
+            genusList.forEach(System.out::println);
         } catch (NullPointerException e) {
             System.out.printf("");
         } catch (FileNotFoundException e) {
@@ -266,6 +270,34 @@ public class MainMenu {
                 continue;
             }
         } while(response != 4);
+
+    }
+    public static void deletePlant () {
+        System.out.println("Which plant would you like to delete?");
+
+        List <Foliage> allFoliage = foliagePlantContainer.getAllPlants();
+        List <Succulent> allSucculent = succulentPlantConatinaer.getAllPlants();
+        for (int i = 0; i < allFoliage.size(); i++){
+            System.out.printf("%s ---> %s", allFoliage.get(i).getId(),allFoliage.get(i).getName());
+        }
+        for (int i = 0; i < allSucculent.size(); i++){
+            System.out.printf("%s ---> %s", allSucculent.get(i).getId(),allSucculent.get(i).getName());
+        }
+        System.out.println("\nPlease copy the id of the plant you would like to remove?\nPlant ID:");
+        String uuidResponse = input.nextLine();
+        Optional <Foliage> foundPlant = allFoliage.stream().filter(plant-> plant.getId().equals(uuidResponse.trim())).findFirst();
+        //distinguish between foliage and succulent
+        if (foundPlant.isPresent()) {
+           System.out.printf("Found plant: %s", foundPlant.get().getName());
+           allFoliage.remove(foundPlant);
+        } else if (foundPlant.isPresent()) {
+
+        } else {
+            System.out.println("Plant not found");
+        }
+        //edge case for if there are more than one of the same item
+
+
 
     }
 }
