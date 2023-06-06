@@ -273,31 +273,30 @@ public class MainMenu {
 
     }
     public static void deletePlant () {
+          /*
+        DESCRIPTION: view current list of all plants to delete
+        PRE-CONDITION: receives input from prompted question about plant id;
+        POST-CONDITION: returns list of plant ids where the user then can pick and delete plant;
+        */
         System.out.println("Which plant would you like to delete?");
-
-        List <Foliage> allFoliage = foliagePlantContainer.getAllPlants();
-        List <Succulent> allSucculent = succulentPlantConatinaer.getAllPlants();
-        for (int i = 0; i < allFoliage.size(); i++){
-            System.out.printf("%s ---> %s", allFoliage.get(i).getId(),allFoliage.get(i).getName());
-        }
-        for (int i = 0; i < allSucculent.size(); i++){
-            System.out.printf("%s ---> %s", allSucculent.get(i).getId(),allSucculent.get(i).getName());
-        }
+        List <Plant> combinedPlants = new ArrayList<>();
+        combinedPlants.addAll(foliagePlantContainer.getAllPlants());
+        combinedPlants.addAll(succulentPlantConatinaer.getAllPlants());
+        combinedPlants.stream().map(foliage -> foliage.getId() + " --> "+ foliage.getName()).forEach(System.out::println);
         System.out.println("\nPlease copy the id of the plant you would like to remove?\nPlant ID:");
         String uuidResponse = input.nextLine();
-        Optional <Foliage> foundPlant = allFoliage.stream().filter(plant-> plant.getId().equals(uuidResponse.trim())).findFirst();
-        //distinguish between foliage and succulent
-        if (foundPlant.isPresent()) {
-           System.out.printf("Found plant: %s", foundPlant.get().getName());
-           allFoliage.remove(foundPlant);
-        } else if (foundPlant.isPresent()) {
 
+        Plant foundPlant = combinedPlants.stream().filter(plant-> plant.getId().equals(uuidResponse.trim())).findFirst().get();
+
+        if (foundPlant instanceof Foliage) {
+            System.out.println("Deleting Plant: "+ foundPlant.getName());
+            foliagePlantContainer.removePlant((Foliage) foundPlant);
+        } else if(foundPlant instanceof Succulent) {
+            System.out.println("Deleting Plant: "+ foundPlant.getName());
+            succulentPlantConatinaer.removePlant((Succulent) foundPlant);
         } else {
-            System.out.println("Plant not found");
+            System.out.println("No Plant with that ID");
         }
-        //edge case for if there are more than one of the same item
-
-
 
     }
 }

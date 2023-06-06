@@ -16,8 +16,9 @@ public class PlantConatinaer<T extends Plant> {
         //remove plant
         //then re-add plant
     }
-    public void removePlant(T plant) {
+    public boolean removePlant(T plant) {
         plants.remove(plant);
+        return false;
     }
     public List<T> getAllPlants() {
         return plants;
