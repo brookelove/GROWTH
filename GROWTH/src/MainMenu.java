@@ -1,21 +1,25 @@
 import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.File;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
-import java.nio.file.Files;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class MainMenu {
-    Exception NoPlant;
+//    Exception NoPlant;
+        private static PlantManagement plantManagement;
+        public MainMenu() {
+            plantManagement = new PlantManagement();
+        }
     static BufferedReader read;
     static Scanner input = new Scanner(System.in);
     static PlantConatinaer<Foliage> foliagePlantContainer = new PlantConatinaer<>();
     static PlantConatinaer<Succulent> succulentPlantConatinaer = new PlantConatinaer<>();
+//    static  List<Plant> manyPlantsList = new ArrayList<>();
     static String fileName = "/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/PlantDictionary.txt"; // throws an error if I dont include the absolute path?
     public static ArrayList<String> findPlant(String commonName) {
         /*
@@ -46,19 +50,22 @@ public class MainMenu {
         }
         return plantRes;
     }
-    public static void addPlant(){
+
+    public static Plant addPlant(Integer numOfPlants){
+        List<Plant> plantToAdd = new ArrayList<>();
         /*
         DESCRIPTION: Add a new dependant on the name of the plant
         PRE-CONDITION: user has to choose from a common name list after inputing the first letter of their already known common list;
         POST-CONDITION: adds a either a new Foliage or Succulent to the list of plants the person has in their greenhouse;
         */
         String uuid;
-        Integer potSize;
-        Float price;
-        String variation;
+        Integer potSize = 0;
+        Float price = null;
+        String variation = null;
         String response;
-        String plant;
+        String plant = null;
         Boolean spikes;
+        Boolean plantAdded = false;
         String letterRes = null;
         ArrayList<String> plantInfo = new ArrayList<>();
         ArrayList<String> plantChoiceArr = new ArrayList<>();
@@ -75,7 +82,7 @@ public class MainMenu {
             };
         } catch (PlantExceptions.NotAChar e){
             System.out.println("Please inter a character from A-Z or a-z");
-            return;
+            return null;
         }
 
         try {
@@ -120,7 +127,7 @@ public class MainMenu {
         } catch (InputMismatchException e) {
             System.out.println("Please input a valid number.");
             letterRes = null;
-            return;
+//            return null;
         }
         // TRY CATCH ENDS
         ArrayList plantResults = findPlant(plant);
@@ -130,7 +137,15 @@ public class MainMenu {
         uuid = UUID.randomUUID().toString();
         String commonName = plantResults.get(0).toString();
         if(plantResults.get(7).toString().contains("F")){
-            foliagePlantContainer.addPlant(new Foliage(uuid, commonName,potSize,variation,price,plantInfo));
+            //if numOfPlants is greater than 01 then return new Foliage else do this
+            if (numOfPlants == 1) {
+                foliagePlantContainer.addPlant(new Foliage(uuid, commonName, potSize, variation, price, plantInfo));
+                plantAdded = true;
+            } else {
+                plantToAdd.add(new Foliage(uuid, commonName, potSize, variation, price, plantInfo));
+                plantAdded = true;
+            }
+
         } else {
             System.out.println("Does your plant have spikes?");
             System.out.println("Spikes?");
@@ -141,9 +156,35 @@ public class MainMenu {
             } else {
                 spikes = false;
             }
-            succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName,potSize,price,variation,spikes,plantInfo));
+            //if numOfPlants is greater than 01 then return new Succulent else do this
+            if (numOfPlants == 1) {
+                succulentPlantConatinaer.addPlant(new Succulent(uuid, commonName, potSize, price, variation, spikes, plantInfo));
+                plantAdded = true;
+            } else {
+                plantToAdd.add(new Succulent(uuid, commonName, potSize, price, variation, spikes, plantInfo));
+                plantAdded = true;
+            }
+
+        }
+        if (plantAdded) {
+            return plantToAdd.get(0);
+        } else {
+            return null;
         }
     }
+    public static void addCollectionPlants(Collection<Plant> plants) {
+        plantManagement.addManyPlants(plants);
+    }
+    public static void addManyPlants(Integer numOfPlants) {
+        Collection<Plant> plantsToAdd = new ArrayList<>();
+        for (int i = 0;i < numOfPlants; i++ ){
+            System.out.printf("Plant %s of %s\n", i+ 1, numOfPlants);
+            Plant newPlant = addPlant(numOfPlants);
+            plantsToAdd.add(newPlant);
+        }
+        addCollectionPlants(plantsToAdd);
+    }
+
     public static void plantary () {
          /*
         DESCRIPTION: view all plants that the user has input
@@ -162,7 +203,6 @@ public class MainMenu {
         } else {
             for (int i = 0; i < foliageList.size(); i++) {
                 System.out.printf("%s - %s",i+1,foliageList.get(i).getName());
-//                System.out.printf("%s - %s",i+1,foliageList.get(i).getInfo());
             }
         }
         System.out.println("\nList of Succulents:\n");
@@ -171,7 +211,6 @@ public class MainMenu {
         } else {
             for (int i = 0; i < succulentList.size(); i++) {
                 System.out.printf("%s - %s",i+1,succulentList.get(i).getName());
-//                System.out.printf("%s - %s",i+1,succulentList.get(i).getInfo());
             }
         }
         System.out.printf("Total Plants: %s\n",succulentList.size() + foliageList.size());
@@ -189,8 +228,8 @@ public class MainMenu {
             String line = read.readLine();
             while (line != null) {
                 line = read.readLine();
-                if (line.contains("Common_Name:")) {
                     String genus = read.readLine();
+                if (line.contains("Common_Name:")) {
                     genus.replace(',', ' ');
                     genus = genus.split(" ")[0];
                     genus.trim();
@@ -200,7 +239,6 @@ public class MainMenu {
                 }
             }
             read.close();
-
             // Print the genus list instead of a for loop
             genusList.forEach(System.out::println);
         } catch (NullPointerException e) {
@@ -228,6 +266,7 @@ public class MainMenu {
         PRE-CONDITION: receiving user input from switch case to see what user would like to check  ;
         POST-CONDITION: returns total number succulents or foliage if choosing 1 or 2 and if choosing 3, 4, or 5 will either receive another method or break the loop. If the user does not have a plant added in case 1 or 2 it will throw a custom error
         */
+        PlantConatinaer<Plant> plantContainer = new PlantConatinaer<>();
         System.out.println("This is the GreenHouse! A place where you can see the total list of items in you");
         Integer response = 0;
         do {
@@ -246,11 +285,18 @@ public class MainMenu {
                     //for loop to list all foli by common name and botanical name
                     break;
                 case 2:
-                    if (foliagePlantContainer.getAllPlants().size() == 0) {
+                    if (foliagePlantContainer.getAllPlants().size() == 0 && plantContainer.getAllPlants().size() == 0) {
                         throw new PlantExceptions.NoPlantFound("No plants");
                     } else {
                         System.out.printf("Total Foliage: %s\n", foliagePlantContainer.getAllPlants().size());
-                        System.out.println(foliagePlantContainer.getAllPlants().get(0).getName());
+                        for (Foliage foliage : foliagePlantContainer.getAllPlants()) {
+                            System.out.println(foliage.getName());
+                        }
+                        for (Plant plant : plantContainer.getAllPlants()) {
+                            System.out.println(plant.getName());
+                        }
+
+
                     }
                     break;
                 case 3:
@@ -271,6 +317,18 @@ public class MainMenu {
             }
         } while(response != 4);
 
+    }
+    public static void printPlants() {
+        String printSRC = "/Users/brookelove/code/bostonU/MET_CS_622/GROWTH/GROWTH/src/Plant.bin";
+        //combined plants
+        List <Plant> combinedPlants = new ArrayList<>();
+        combinedPlants.addAll(foliagePlantContainer.getAllPlants());
+        combinedPlants.addAll(succulentPlantConatinaer.getAllPlants());
+        //for loop to go through all current combined plants
+        for (Plant combinedPlant : combinedPlants) {
+            FileOutput.writePlantsToFile(combinedPlant, printSRC);
+        }
+        //then add each object of plant into the FiloOutput java
     }
     public static void deletePlant () {
           /*
